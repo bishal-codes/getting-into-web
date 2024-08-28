@@ -1,0 +1,39 @@
+:root {
+  --bg: #fff;
+  --text: #000;
+}
+
+:root.dark {
+  --bg: #000;
+  --text: #fff;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+#color-mode {
+  background: gray;
+  height: 50px;
+  width: 70px;
+  border-radius: 20px;
+  padding: 3px;
+  color: var(--text);
+}
+
+#toggle-btn {
+  background: var(--bg);
+  height: 50px;
+  width: 70px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -280,3 +280,232 @@ hobbies.forEach((hobby) => console.log(hobby));
 
 // map
 const hobbyItems = hobbies.map((hobby) => `<li>${hobby}</li>`);
+
+/**
+ * null coalescing operator: ES11
+ *  - ??: to check null or undefined value
+ * - ??= : to assign default value
+ */
+
+// null coalescing operator
+const name1 = null ?? "Bishal"; // Bishal
+const name2 = undefined ?? "Bishal"; // Bishal
+const name3 = false ?? "Bishal"; // false
+
+// null coalescing assignment operator
+let name4;
+name4 ??= "Bishal"; // Bishal
+
+/**
+ * optional chaining operator: ES11
+ * - ?. : to check null or undefined value
+ */
+
+// optional chaining operator
+const person3 = {
+  name: "Bishal",
+  age: 20,
+};
+
+const city1 = person3.address?.city; // undefined
+
+/**
+ * Ternary operator: ES11
+ * - condition ? true : false
+ */
+
+// ternary operator
+const isAdult3 = age >= 18 ? "Adult" : "Child";
+
+/**
+ * promise: ES6
+ * - then
+ * - catch
+ * - finally
+ */
+
+// promise: is a placeholder for a value that will be available in the future
+// promise is either resolved or rejected
+// promise is asynchronous
+// resolve function will be called when the promise is resolved
+// reject function will be called when the promise is rejected
+
+let hasError = false;
+const promise = new Promise((resolve, reject) => {
+  // ! - not operator
+  if (!hasError) {
+    resolve("Success");
+  } else {
+    reject("Error");
+  }
+});
+
+promise
+  .then((response) => console.log(response))
+  .catch((error) => console.log(error))
+  .finally(() => console.log("Finally"));
+
+/**
+ * async/await: ES8
+ * - async function is a function that returns a promise
+ * writing async code is non-blocking
+ * - await keyword is used to wait for the promise to resolve
+ * - error handling: try/catch is used to handle error in async/await
+ * - async/await is a syntactic sugar for promise
+ */
+
+// async function
+async function fetchData() {
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/users");
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  } finally {
+    console.log("Finally");
+  }
+}
+
+fetchData();
+
+/**
+ * timer functions
+ * setTimeout
+ * - setTimeout: to run a function after a certain time
+ * - clearTimeout: to clear the setTimeout
+ */
+
+// setTimeout
+const timeout = setTimeout(() => {
+  console.log("Hello");
+}, 3000);
+
+function greet1() {
+  console.log("Hello");
+}
+
+// greet1 needs not to be a function expression as setTimeout expects a function
+setTimeout(greet1, 3000);
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function greet2() {
+  console.log("before sleep");
+  await sleep(3000);
+  console.log("after sleep");
+}
+
+greet2();
+
+/**
+ * HTML - Hyper Text Markup Language
+ *      - structure of web page
+ *      - tags: opening tag, closing tag, self-closing tag
+ *      - attributes: name, value
+ *      - nesting of tags
+ *      - semantic tags: header, footer, section, article, aside, nav, main
+ *      - form elements: form, input, button, select, option, textarea
+ *      - table elements: table, thead, tbody, tr, th, td
+ */
+
+/**
+ * DOM - Document Object Model
+ *     - window object
+ *     - document object
+ *     - getElementById
+ *     - querySelector
+ *     - querySelectorAll
+ *     - createElement
+ *     - innerHTML
+ *     - innerText
+ */
+
+/**
+ * event listeners
+ * - addEventListener
+ * - removeEventListener
+ * - event object
+ * - preventDefault
+ */
+
+/**
+ * string methods
+ * - toUpperCase
+ * - toLowerCase
+ * - trim
+ * - includes
+ * - startsWith
+ * - endsWith
+ * - split
+ * - slice
+ * - substring
+ * - substr
+ * - replace
+ * - indexOf
+ * - lastIndexOf
+ * - charAt
+ * - charCodeAt
+ * - concat
+ * - repeat
+ * - padStart
+ * - padEnd
+ * - trimStart
+ * - trimEnd
+ * - match
+ * - search
+ * - localeCompare
+ * - localeCompare
+ */
+
+/**
+ * array methods
+ * - push
+ * - pop
+ * - shift
+ * - unshift
+ * - splice
+ * - slice
+ * - concat
+ * - join
+ * - reverse
+ * - sort
+ * - indexOf
+ * - lastIndexOf
+ * - includes
+ * - find
+ * - findIndex
+ * - filter
+ * - map
+ * - reduce
+ * - some
+ * - every
+ * - forEach
+ */
+
+/**
+ * object methods
+ * - keys
+ * - values
+ *  - entries
+ * - hasOwnProperty
+ * - assign
+ * - freeze
+ * - seal
+ * - defineProperty
+ * - defineProperties
+ * - getOwnPropertyDescriptor
+ * - getOwnPropertyDescriptors
+ * - getPrototypeOf
+ * - setPrototypeOf
+ * - is
+ * - isExtensible
+ * - isFrozen
+ * - isSealed
+ * - preventExtensions
+ * - getOwnPropertyNames
+ * - create
+ * - fromEntries
+ */
