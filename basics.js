@@ -509,3 +509,95 @@ greet2();
  * - create
  * - fromEntries
  */
+
+/**
+ * git version control system - VCS
+ *  - a tool to manage source code
+ *  - distributed version control system
+ * github
+ *  - a platform to host git repositories
+ *  - to collaborate with other developers
+ *  - to contribute to open source projects
+ *
+ * git commands
+ * - git: to check git version and help
+ * - git init: to initialize git repository or reinitialize existing repository
+ * - git status: to check the status of the repository (untracked, modified, staged)
+ * - git add: to add files to the staging area(staging area is a place where files are ready to be committed)
+ * - git commit -m "message": to commit the changes to the repository
+ * - git log: to check the commit history
+ * - git stash: to save the changes temporarily
+ * - git stash pop: to apply the changes saved in the stash
+ *
+ * commit message means what changes are made in the commit and only in the local repository
+ *
+ * - git branch -M main: to rename the default branch from master to main
+ * - git remote add origin <url>: to add remote repository
+ * - git push -u origin main: to push the changes to the remote repository
+ *
+ * - git diff: to check the changes made in the files
+ * - git log: to get the commit history
+ * - git checkout <commit-hash>: to go to the specific commit
+ *
+ * when we checkout to a specific commit, we are in the detached head state and we should not do any push or commit
+ *
+ * - git branch: to check the branch
+ * - git checkout <branch-name>: to switch to the branch
+ * - git checkout -b <branch-name>: to create and switch to the branch
+ *
+ * branch-name is like feature/branch-name
+ * after creating the branch, we can do push and commit or publish the branch
+ * - git push origin <branch-name>: to push the branch to the remote repository
+ * and create a pull request to merge the branch to the main branch
+ * - git pull origin main: to pull the changes from the main branch
+ * - git merge <branch-name>: to merge the branch to the main branch
+ * - git push origin main: to push the changes to the main branch
+ *
+ * pull request is a request to merge the branch to the main branch
+ * - code review
+ * - testing
+ * - feedback
+ * - merge
+ * - delete branch
+ *
+ * if new person wants to work on this branch, he/she should pull the changes from the main branch
+ * paila u aafnai main branch ma hunxa (git checkout main)
+ * ani naya branch tanxa remote bata (git fetch origin <branch-name>)
+ * - git fetch origin <branch-name>: to fetch the changes from the main branch
+ * ani branch ma switch garxa (git checkout <branch-name>)
+ * - git checkout <branch-name>: to switch to the branch
+ * ani finally feedback diyera merge garxa (git merge main)
+ * - git merge main: to merge the main branch to the branch
+ *
+ * yo merge vaisake pachhi, (yedi hamiley remote bata merge gareko vaye) hamro local ma chai change vako hudaina jun herna ko lagi
+ * - git log: to check the commit history
+ * - git status: to check the status of the repository
+ *
+ * main branch ma janu parxa (git checkout main)
+ * - git checkout main: to switch to the main branch
+ *
+ * ani pull garne (git pull origin main)
+ * - git pull origin main: to pull the changes from the main branch
+ *
+ * ani branch delete garne (git branch -d <branch-name>)
+ * after merging the branch, we can delete the branch
+ * - git branch -d <branch-name>: to delete the branch
+ *
+ * ani remote ma pani delete garne (git push origin --delete <branch-name>)
+ * - git push origin --delete <branch-name>: to delete the branch from the remote repository
+ *
+ * merge conflict
+ * yedi 2 person haru main branch bata naya branch ma kam garxan
+ *  - person 1: git checkout -b feature/branch-name
+ *  - person 2: git checkout -b feature/branch-name-2
+ *
+ * yiniharu xutta xuttai branch ma vako ley main branch ma asar gardaina tara ancestor or common branch main bata aako ho
+ * yedi 2 jana le same file ma change garxan vane
+ * jastai person 1 le file ko line 10 ma change garxa ra person 2 le file ko line 10 ma change garxa
+ * ra feature ko ka  vayo rey ani pull request pathauxa
+ * ra merge garda conflict aauxa
+ *
+ * ssh key generate garne
+ * - connect and authenticate to remote servers and services.
+ * - ssh-keygen -t ed25519 -C "your_email@example.com"
+ */
