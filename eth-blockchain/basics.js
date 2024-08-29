@@ -167,3 +167,11 @@
  *     - brainstorming and sketching out a project idea
  *     - focus on solving a real-world problem using smart contracts and decentralized applications
  */
+
+/**
+ * es6 - ECMAScript 6
+ * - let, const - block scoped
+ * - var - function scoped
+ * - hoisting
+ * - temporal dead zone - TDZ: before the variable is declared
+ */
