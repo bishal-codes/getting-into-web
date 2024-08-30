@@ -574,6 +574,7 @@ greet2();
  * - ssh-keygen -t ed25519 -C "your_email@example.com"
  */
 
+<<<<<<< HEAD:web/html-css-js/basics.js
 /** Server - node - npm - bundler - build tools - linter - modules - React/ReactDOM - jsx
  * - a computer or a software that serves the client request
  *
@@ -722,4 +723,10 @@ greet2();
  * - state
  * - hooks
  *
+=======
+/**
+ * es6 - ecmascript
+ * let const var
+ * temporal dead zone
+>>>>>>> f816fe3b8fdb691745960acdc337c61f11f72ca2:basics.js
  */
