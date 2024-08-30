@@ -1,6 +1,4 @@
-/**
- * Ethereum Blockchain Development
- */
+// Ethereum Blockchain Development
 
 /** Day 1 - Blockchain: The foundation of trustless systems
  * - What is the purpose of blockchain?
@@ -116,6 +114,29 @@
  *      - data integrity: hash functions ensure data integrity by verifying the data has not been tampered with (hash of data) == (hash of data)
  *
  *   tool: https://emn178.github.io/online-tools/sha256
+ */
+
+/** Day 2 - Cryptographic hashes - SHA-256
+ *
+ * SHA-256 hashing (Secure Hash Algorithm 256-bit)
+ *  - a cryptographic hash function that produces a 256-bit (32-byte)/(a fixed-size hash ) hash value from any input data
+ *  - one-way hash function: cannot be decrypted back to the original input
+ *
+ * Challenge: Hashing Data - create and compare SHA256 hashes using [ethereum-crypto](https://github.com/ethereum/js-ethereum-cryptography)
+ *
+ * Brute Force Hashing or Brute force attack: trying all possible combinations of input to find the correct hash
+ * - hash cracking: trying all possible inputs to find the correct hash
+ * - hash collision: finding two different inputs that produce the same hash
+ * - rainbow tables: precomputed hash values for common inputs
+ *   - table which maps common inputs to their hash output.
+ *
+ *   | Common input/passwords | Hash output/sha256 hash |
+ *   | password               | 5e884dsf...ef721d1542d8 |
+ *   | 123456                 | 7c4a8d09....f4c2f70e9f8 |
+ *
+ * To protect against these attacks, it's common to add a salt to the input before hashing.
+ * A salt is a random value that makes the resulting hash unique, even if the input is common.
+ * Salting: Adding a random value to inputs before hashing to prevent attacks like rainbow table lookups.
  */
 
 /**
