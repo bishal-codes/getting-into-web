@@ -601,3 +601,9 @@ greet2();
  * - connect and authenticate to remote servers and services.
  * - ssh-keygen -t ed25519 -C "your_email@example.com"
  */
+
+/**
+ * es6 - ecmascript
+ * let const var
+ * temporal dead zone
+ */
