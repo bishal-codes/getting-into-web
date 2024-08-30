@@ -1,5 +1,4 @@
-/**
- * about JS
+/** about JS
  * data types, variables: let, var, const
  * comments
  * arrays
@@ -32,8 +31,7 @@ function greet() {
 //   console.log("Hello Bishal");
 // };
 
-/**
- * arrow function
+/** arrow function
  *     - arguments in function declaration
  *     - no arguments in arrow function
  *     - no this binding in arrow function
@@ -43,8 +41,7 @@ function greet() {
  *     - explicit return: need to write return keyword
  */
 
-/**
- * template literals: ES6
+/** template literals: ES6
  *   - double quotes: ""
  *  - single quotes: ''
  *  - backticks: ``
@@ -54,8 +51,7 @@ function greet() {
  *   - string concatenation: +
  */
 
-/**
- * destructuring: ES6
+/** destructuring: ES6
  *  - object destructuring: {}
  * - array destructuring: []
  * - nested destructuring
@@ -82,8 +78,7 @@ const {
   address: { city, country },
 } = person1;
 
-/**
- * spread operator: ES6
+/** spread operator: ES6
  * - array spread operator: [...]
  * - object spread operator: {...}
  * - shallow copy
@@ -107,8 +102,7 @@ const person2 = {
 
 const personCopy1 = { ...person2 };
 
-/**
- * rest operator: ES6
+/** rest operator: ES6
  * - array rest operator: ...
  * - object rest operator: ...
  * - rest parameter in function
@@ -128,8 +122,7 @@ function greetPerson(name, ...restArgs) {
 
 greetPerson("Bishal", 20, "Kathmandu", "Nepal");
 
-/**
- * default parameters: ES6
+/** default parameters: ES6
  * - default parameters in function
  */
 
@@ -141,15 +134,13 @@ function greetPerson1(name = "Bishal", age = 20) {
 greetPerson1();
 greetPerson1("Bishal", 20);
 
-/**
- * ternary operator
+/** ternary operator
  * - condition ? true : false
  */
 
 const isAdult = age >= 18 ? "Adult" : "Child";
 
-/**
- * logical operators
+/** logical operators
  * - AND: &&
  * - OR: ||
  * - NOT: !
@@ -158,8 +149,7 @@ const isAdult = age >= 18 ? "Adult" : "Child";
 const isAdult1 = age >= 18 && "Adult";
 const isAdult2 = age < 18 || "Child";
 
-/**
- * comparison operators
+/** comparison operators
  * - ==: loose equality
  * - ===: strict equality
  * - !=: loose inequality
@@ -189,8 +179,7 @@ const isGreaterThanOrEqual = 10 >= 10; // true
 // less than or equal to
 const isLessThanOrEqual = 10 <= 5; // false
 
-/**
- * Date
+/** Date
  * - new Date()
  * - getFullYear()
  * - getMonth()
@@ -225,8 +214,7 @@ console.log(date.toLocaleDateString());
 console.log(date.toLocaleTimeString());
 console.log(date.toUTCString());
 
-/**
- * loops
+/** loops
  * - for loop
  * - while loop
  * - do while loop
@@ -263,8 +251,7 @@ for (const key in person) {
   console.log(key, person[key]);
 }
 
-/**
- * array methods
+/** array methods
  * - forEach
  * - map
  * - filter
@@ -281,8 +268,7 @@ hobbies.forEach((hobby) => console.log(hobby));
 // map
 const hobbyItems = hobbies.map((hobby) => `<li>${hobby}</li>`);
 
-/**
- * null coalescing operator: ES11
+/** null coalescing operator: ES11
  *  - ??: to check null or undefined value
  * - ??= : to assign default value
  */
@@ -296,8 +282,7 @@ const name3 = false ?? "Bishal"; // false
 let name4;
 name4 ??= "Bishal"; // Bishal
 
-/**
- * optional chaining operator: ES11
+/** optional chaining operator: ES11
  * - ?. : to check null or undefined value
  */
 
@@ -309,26 +294,22 @@ const person3 = {
 
 const city1 = person3.address?.city; // undefined
 
-/**
- * Ternary operator: ES11
+/** Ternary operator: ES11
  * - condition ? true : false
  */
 
 // ternary operator
 const isAdult3 = age >= 18 ? "Adult" : "Child";
 
-/**
- * promise: ES6
+/** promise: ES6
  * - then
  * - catch
  * - finally
+ *
+ * is a placeholder for a value that will be available in the future
+ * is either resolved or rejected
+ * is asynchronous
  */
-
-// promise: is a placeholder for a value that will be available in the future
-// promise is either resolved or rejected
-// promise is asynchronous
-// resolve function will be called when the promise is resolved
-// reject function will be called when the promise is rejected
 
 let hasError = false;
 const promise = new Promise((resolve, reject) => {
@@ -345,8 +326,7 @@ promise
   .catch((error) => console.log(error))
   .finally(() => console.log("Finally"));
 
-/**
- * async/await: ES8
+/** async/await: ES8
  * - async function is a function that returns a promise
  * writing async code is non-blocking
  * - await keyword is used to wait for the promise to resolve
@@ -369,8 +349,7 @@ async function fetchData() {
 
 fetchData();
 
-/**
- * timer functions
+/** timer functions
  * setTimeout
  * - setTimeout: to run a function after a certain time
  * - clearTimeout: to clear the setTimeout
@@ -400,8 +379,7 @@ async function greet2() {
 
 greet2();
 
-/**
- * HTML - Hyper Text Markup Language
+/** HTML - Hyper Text Markup Language
  *      - structure of web page
  *      - tags: opening tag, closing tag, self-closing tag
  *      - attributes: name, value
@@ -411,8 +389,7 @@ greet2();
  *      - table elements: table, thead, tbody, tr, th, td
  */
 
-/**
- * DOM - Document Object Model
+/** DOM - Document Object Model
  *     - window object
  *     - document object
  *     - getElementById
@@ -423,16 +400,14 @@ greet2();
  *     - innerText
  */
 
-/**
- * event listeners
+/** event listeners
  * - addEventListener
  * - removeEventListener
  * - event object
  * - preventDefault
  */
 
-/**
- * string methods
+/** string methods
  * - toUpperCase
  * - toLowerCase
  * - trim
@@ -460,8 +435,7 @@ greet2();
  * - localeCompare
  */
 
-/**
- * array methods
+/** array methods
  * - push
  * - pop
  * - shift
@@ -485,8 +459,7 @@ greet2();
  * - forEach
  */
 
-/**
- * object methods
+/** object methods
  * - keys
  * - values
  *  - entries
@@ -510,8 +483,7 @@ greet2();
  * - fromEntries
  */
 
-/**
- * git version control system - VCS
+/** git version control system - VCS
  *  - a tool to manage source code
  *  - distributed version control system
  * github
@@ -600,4 +572,154 @@ greet2();
  * ssh key generate garne
  * - connect and authenticate to remote servers and services.
  * - ssh-keygen -t ed25519 -C "your_email@example.com"
+ */
+
+/** Server - node - npm - bundler - build tools - linter - modules - React/ReactDOM - jsx
+ * - a computer or a software that serves the client request
+ *
+ * HTTP: Hyper Text Transfer Protocol
+ * hamro client le server bata data transfer garne protocol ho
+ * - a protocol to transfer data between client and server
+ * - http is used to communicate between client and server (request and response)
+ * - server can be used to store, process, and serve data
+ *
+ * Node.js
+ * - Node.js is a runtime environment to run JavaScript outside the browser
+ * - Node.js is built on Chrome's V8 JavaScript engine
+ * - Asynchronous, event-driven, non-blocking I/O
+ * - Advanced JavaScript features or frameworks like Express, Nest.js, etc. evolve
+ *
+ * NPM: Node Package Manager
+ * - a package manager for Node.js
+ * - to install, update, and manage packages or dependencies
+ * - package.json: to manage the project dependencies
+ * - package-lock.json: to lock the version of the dependencies
+ * - node_modules: to store the installed packages
+ * - npm init: to initialize the package.json
+ * - npm install <package-name>: to install the package
+ * - npm install: to install the dependencies from package.json
+ * - npm install <package-name> --save-dev: to install the dev dependencies
+ * - npm uninstall <package-name>: to uninstall the package
+ *
+ * first node install garne
+ * nvm ls: to check the node version
+ * nvm install <version>: to install the node version
+ * nvm use <version>: to use the node version
+ * node -v: to check the node version
+ * npm -v: to check the npm version
+ *
+ * Bundler: Webpack, Parcel, Rollup, Vite (Beast)
+ * - to bundle, minify, and optimize the code
+ * - chunking, minification during development phase
+ * - image optimization
+ * - minify, bundle and compress files †o production
+ * - consistent hashing algorithm to cache things up
+ * - diagnostic
+ * - error handling
+ * - https
+ * - zero config - no need of many configurations. No configuration is required in order to use parcel in the application.
+ * - tree shaking: remove unused codes
+ * - code splitting
+ * - differential bundling: when app is hosted, app can be open in IE and older versions of IE, firefox and parcel takes care of all these by giving differential bundling to app and hence app runs smoothly in older browsers as well
+ * - creates different dev and production bundles
+ * - A lot people thinks react apps are fast because react is fast 😂 but when we build large scale production ready applications, we need a lot of other things that bundlers doing to optimize
+ * - to create the build files
+ *
+ * Build tools: Babel, PostCSS, ESLint, Prettier (chetaah)
+ * - Babel: to convert the modern JavaScript code to the browser-compatible code
+ * - PostCSS: to convert the SCSS to CSS
+ *
+ * first create a folder
+ * open the terminal > go to the folder > cd <folder-name> > code .
+ * npm create vite@latest ./<project-name> -- template <template-name> : to create a vite project
+ * npm install: to install the dependencies > provide the node modules
+ * - set up the project
+ *   - script: to run the project
+ *   - index.html: to render the content
+ *   - index.js: to write the JavaScript code
+ *   - index.css: to write the CSS code
+ *   - package.json: to manage the project dependencies
+ *   - node_modules: to store the installed packages
+ *   - vite.config.js: to configure the vite project
+ *   - public: to store the public assets
+ *   - dist: to store the build files
+ *   - src: to store the source files
+ *   - .gitignore: to ignore the files and folders
+ *   - eslint.config.js: to configure the eslint (linter)
+ *   - README.md: to write the project documentation
+ *
+ * linter - eslint
+ * - to check the syntax of the code
+ * - find and fix the errors
+ * - enforce the coding standards
+ * - eslint --init: to initialize the eslint
+ *
+ * modules - CommonJS, ES6 modules
+ * - to modularize the code
+ * - import and export the code
+ * - CommonJS: require, module.exports, exports
+ * - ES6 modules: import, export
+ * - ES6 modules are static, hoisted, and asynchronous
+ *
+ * ES6 modules: export
+ * - named export: export {name/variable/function}
+ *    - must use the same name while importing
+ * - default export: export default name/variable/function
+ *    - can use any name while importing
+ * - export {name/variable/function} from "module-name"
+ * - export * from "module-name"
+ * - export {name/variable/function} as alias from "module-name"
+ * - export default name/variable/function as alias
+ * - export {name/variable/function} from "module-name" as alias
+ * - export * from "module-name" as alias
+ *
+ * ES6 modules: import
+ * default import: import name/variable/function from "module-name"
+ * named import: import {name/variable/function} from "module-name"
+ * import * as alias from "module-name"
+ * import {name/variable/function as alias} from "module-name"
+ * import {name/variable/function} from "module-name" as alias
+ * import * as alias from "module-name" as alias
+ * import "module-name"
+ * import "module-name" as alias
+ * import {name/variable/function} from "module-name" as alias
+ *
+ * ES6 modules: dynamic import
+ * - to import the module dynamically
+ * - import("module-name")
+ * - import("module-name").then(module => module.default)
+ *
+ * React
+ * - a JavaScript library to build the user interfaces
+ * - to create the virtual DOM
+ *
+ * core of the react
+ * - Reconciliation: to update the DOM efficiently
+ * - Diffing algorithm: to compare the previous and current virtual DOM
+ * - React Fiber: to update the DOM asynchronously
+ *
+ * Reconciliation is a process which uses "diffing algorithm" to compare two virtual DOMs (initial and updated)
+ * to find the difference between the HTML elements/nodes and updates the actual DOM using "only the updated nodes".
+ *
+ * ReactDOM
+ * - a package to render the React components
+ * - to render the components in the DOM
+ *
+ * JSX: JavaScript XML
+ * - to write the HTML in JavaScript
+ * - to create the virtual DOM
+ * - to write and render the components
+ * - camelCase: to write the attributes
+ * - className: to write the class attribute
+ * - htmlFor: to write the for attribute
+ * - self-closing tag: to write the self-closing tag
+ *
+ * React components
+ * - functional components: javascript functions that return JSX
+ * - class components: ES6 classes that extend React.Component
+ * - props: to pass the data from parent to child component
+ *
+ * - state
+ * - hooks
+ *
  */
